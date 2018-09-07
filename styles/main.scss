@@ -1,0 +1,331 @@
+@import "./var";
+
+html {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: $main-font;
+  color: $main-color;
+}
+
+body  {
+  margin: 0;
+}
+
+h1 {
+  font-size: $title-font;
+}
+
+h2 {
+  font-size: $bigest-font;
+}
+
+h3 {
+  font-size: $bigger-font;
+}
+
+h4 {
+  font-size: $main-font;
+}
+
+h5 {
+  font-size: $small-font;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {color: inherit;
+  text-decoration: none;
+}
+
+.up-index {
+  position: relative;
+  z-index: 2;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-middle {
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: $main-font;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.btn-fill {
+  color: $white;
+  background-color: $main-color;
+}
+
+.form-group {
+  display: inline-block;
+  padding: 5px 5px 5px 15px;
+  background-color: $lightest-gray;
+  border-radius: 4px;
+}
+
+.form-input {
+  display: inline-block;
+  border: 0;
+  height: 24px;
+  min-width: 300px;
+  padding: 6px 12px;
+  font-size: $main-font;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.landing-page {
+  &__container {
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+}
+
+.header {
+  &__logo {
+    padding: 15px 0;
+    margin: 0 30px;
+    max-width: 80px;
+  }
+
+  &__nav {
+    float: right;
+    padding: 20px 0;
+    margin: 0 30px;
+    font-family: $subtitle-font-family;
+  }
+
+  &__item {
+    display: inline-block;
+    padding: 4px 0;
+
+    a {
+      display: block;
+      padding: 10px;
+    }
+  }
+
+  &__item ~ &__item {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: -1px;
+      top: 13px;
+      display: inline-block;
+      width: 2px;
+      height: 14px;
+      background-image: linear-gradient(to right, $yellow-color, $dark-yellow-color);
+    }
+  }
+}
+
+.banner {
+  &__title {
+    margin: 30px auto;
+    max-width: 700px;
+    font-family: $title-font-family;
+    font-weight: $light-font-weight;
+
+    span {
+      color: $gray;
+    }
+  }
+
+  &__subtitle {
+    font-size: $bigger-font;
+    font-family: $subtitle-font-family;
+    font-weight: $light-font-weight;
+    letter-spacing: 1px;
+  }
+}
+
+.landing {
+  padding: 150px 0;
+
+  .form-input {
+    width: 400px;
+  }
+
+  .btn {
+    min-width: 100px;
+    font-size: $big-font;
+    font-weight: $light-font-weight;
+  }
+
+  &__container {
+    padding: 50px 0;
+  }
+
+  &__label {
+    font-size: $bigger-font;
+    font-family: $subtitle-font-family;
+    font-weight: $light-font-weight;
+    letter-spacing: 1px;
+  }
+
+  &__form {
+    margin: 15px 0 45px;
+  }
+}
+
+.social-icons {
+  padding: 30px 0;
+
+  &__item {
+    display: inline-block;
+
+    a {
+      display: block;
+      margin: 0 3px;
+    }
+
+    img {
+      max-height: 26px;
+    }
+  }
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+@media(max-width: 767px) {
+  html,
+  body {
+    height: 100%;
+  }
+
+  .header {
+    &__logo {
+      padding: 10px 0;
+      margin: 0;
+      max-width: 45px;
+    }
+
+    &__nav {
+      padding: 5px 0;
+      margin: 4px -10px;
+    }
+  }
+
+  .landing-page {
+    &__container {
+      height: 100%;
+      background-size: cover;
+    }
+  }
+
+  .banner {
+    &__title {
+      margin: 20px 0;
+      font-size: $bigger-font;
+    }
+
+    &__subtitle {
+      margin: 10px 0;
+      font-size: $big-font;
+    }
+  }
+
+  .landing {
+    padding: 30px 10px;
+    margin: 15% 0;
+
+    .btn {
+      font-size: $small-font;
+      min-width: 70px;
+    }
+
+    .form-group {
+      padding: 5px;
+    }
+
+    .form-input {
+      min-width: 0;
+      width: 256px;
+      font-size: $small-font;
+    }
+
+    &__container {
+      padding: 20px 0;
+    }
+
+    &__label {
+      font-size: $big-font;
+    }
+
+    &__form {
+      margin-bottom: 30px;
+    }
+  }
+
+  .social-icons {
+    padding: 10px 0;
+  }
+}
+
+@media(max-width: 413px) {
+  .landing {
+    .form-input {
+      width: 246px;
+    }
+  }
+}
+
+@media(max-width: 374px) {
+  .landing {
+    margin: 10% 0;
+
+    .form-input {
+      width: 190px;
+    }
+  }
+}
