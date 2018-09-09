@@ -1,10 +1,10 @@
 var particleObject = {
   "particles": {
     "number": {
-      "value": 50,
+      "value": 45,
       "density": {
         "enable": true,
-        "value_area": 1000
+        "value_area": 1050
       }
     },
     "color": {
@@ -62,8 +62,8 @@ var particleObject = {
       "bounce": false,
       "attract": {
         "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
+        "rotateX": 200,
+        "rotateY": 200
       }
     }
   },
@@ -95,7 +95,7 @@ var particleObject = {
         "speed": 3
       },
       "repulse": {
-        "distance": 200,
+        "distance": 360,
         "duration": 0.4
       },
       "push": {
