@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -33,10 +34,10 @@
         <nav class="header__nav up-index">
           <ul class="header__list">
             <li class="header__item text-middle">
-              <a href="">Blog</a>
+              <a target="_blank" href="https://medium.com/@dosnetwork">Blog</a>
             </li>
             <li class="header__item text-middle">
-              <a href="">Contact</a>
+              <a href="mailto:info@dos.network?subject=Mail to DOS Network&body=Question summary：">Contact</a>
             </li>
           </ul>
         </nav>
@@ -104,12 +105,12 @@
             </a>
           </li>
           <li class="social-icons__item text-middle">
-            <a target="_blank" href="">
+            <a href="#qrcodeModal" rel="modal:open">
               <img src="./img/media-wechat.png" alt="">
             </a>
           </li>
           <li class="social-icons__item text-middle">
-            <a target="_blank" href="">
+            <a href="mailto:info@dos.network?subject=Mail to DOS Network&body=Question summary：">
               <img src="./img/media-mail.png" alt="">
             </a>
           </li>
@@ -122,11 +123,18 @@
   </div>
   <!-- end of Add your site or application content here -->
 
+
+  <!-- Modal HTML embedded directly into document -->
+  <div id="qrcodeModal" class="modal">
+    <img src="./img/dos-qrcode.jpeg" alt="">
+  </div>
+
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

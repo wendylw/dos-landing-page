@@ -75,7 +75,7 @@ a {
 
 .form-group {
   display: inline-block;
-  padding: 5px 5px 5px 15px;
+  padding: 3px 3px 3px 12px;
   background-color: #eff0f0;
   border-radius: 4px; }
 
@@ -146,6 +146,7 @@ a {
     background-color: #2e2925; }
   .landing .form-input {
     width: 400px;
+    height: 20px;
     color: #fff;
     background-color: transparent; }
     .landing .form-input::-webkit-input-placeholder {
@@ -216,6 +217,12 @@ a {
   height: 2px;
   background-image: linear-gradient(to right, #f2d8b7, #dabf99); }
 
+.jquery-modal.blocker {
+  z-index: 1700; }
+
+.modal img {
+  max-width: 100%; }
+
 @media (max-width: 767px) {
   html,
   body {
@@ -234,15 +241,15 @@ a {
     background-size: cover; }
 
   .banner__title {
-    margin: 20px 0;
+    margin: 30px 0;
     font-size: 20px; }
   .banner__subtitle {
     margin: 10px 0;
     font-size: 16px; }
 
   .landing {
-    padding: 30px 10px;
-    margin: 15% 0; }
+    padding: 40px 10px;
+    margin: 10% 0; }
     .landing .btn {
       font-size: 12px;
       min-width: 70px; }
@@ -266,7 +273,7 @@ a {
     width: 243px; } }
 @media (max-width: 374px) {
   .landing {
-    margin: 7% 0; }
+    margin: 0; }
     .landing .form-input {
       width: 187px; } }
 
