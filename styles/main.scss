@@ -124,12 +124,12 @@ a {color: inherit;
   &__logo {
     padding: 15px 0;
     margin: 0 30px;
-    max-width: 80px;
+    max-width: 100px;
   }
 
   &__nav {
     float: right;
-    padding: 20px 0;
+    padding: 40px 0;
     margin: 0 30px;
     font-family: $subtitle-font-family;
   }
@@ -162,8 +162,7 @@ a {color: inherit;
 
 .banner {
   &__title {
-    margin: 30px auto;
-    max-width: 650px;
+    margin: 30px auto 50px;
     font-family: $title-font-family;
     font-weight: bold;
 
@@ -184,6 +183,10 @@ a {color: inherit;
 .landing {
   padding: 120px 0;
 
+  .clear {
+    display: inline-block;
+  }
+
   .form-group {
     background-color: $main-color;
   }
@@ -192,6 +195,22 @@ a {color: inherit;
     width: 400px;
     color: $white;
     background-color: transparent;
+
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: $white;
+    }
+
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: $white;
+    }
+
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: $white;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+      color: $white;
+    }
   }
 
   .btn {
@@ -207,7 +226,7 @@ a {color: inherit;
   }
 
   &__label {
-    font-size: $bigger-font;
+    font-size: $big-font;
     font-family: $subtitle-font-family;
     font-weight: $light-font-weight;
     letter-spacing: 1px;
@@ -215,6 +234,24 @@ a {color: inherit;
 
   &__form {
     margin: 15px 0 45px;
+  }
+
+  &__form-message  {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 548px;
+
+    .response {
+      margin-top: 7px;
+    }
+
+    #mce-error-response {
+      color: $red;
+    }
+
+    #mce-success-response {
+      color: $green;
+    }
   }
 }
 
@@ -238,8 +275,8 @@ a {color: inherit;
 #particles-js {
   position: absolute;
   width: 100%;
-  height: 100%;
-  background-image: url('');
+  top: 50px;
+  bottom: 0;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -342,17 +379,17 @@ a {color: inherit;
 @media(max-width: 413px) {
   .landing {
     .form-input {
-      width: 246px;
+      width: 243px;
     }
   }
 }
 
 @media(max-width: 374px) {
   .landing {
-    margin: 10% 0;
+    margin: 7% 0;
 
     .form-input {
-      width: 190px;
+      width: 187px;
     }
   }
 }

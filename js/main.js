@@ -1,10 +1,10 @@
 var particleObject = {
   "particles": {
     "number": {
-      "value": 45,
+      "value": 50,
       "density": {
         "enable": true,
-        "value_area": 1050
+        "value_area": 1000
       }
     },
     "color": {
@@ -47,7 +47,7 @@ var particleObject = {
     },
     "line_linked": {
       "enable": true,
-      "distance": 150,
+      "distance": 120,
       "color": "#000",
       "opacity": 0.4,
       "width": 1
@@ -95,8 +95,8 @@ var particleObject = {
         "speed": 3
       },
       "repulse": {
-        "distance": 360,
-        "duration": 0.4
+        "distance": 300,
+        "duration": 1.2
       },
       "push": {
         "particles_nb": 4

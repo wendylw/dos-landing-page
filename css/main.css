@@ -101,12 +101,12 @@ a {
 .header__logo {
   padding: 15px 0;
   margin: 0 30px;
-  max-width: 80px; }
+  max-width: 100px; }
 .header__nav {
   float: right;
-  padding: 20px 0;
+  padding: 40px 0;
   margin: 0 30px;
-  font-family: "Questrial", Tahoma, Monaco, Ayuthaya, "Helvetica Neue", Arial, sans-serif; }
+  font-family: Questrial, "Helvetica Neue", Arial, sans-serif; }
 .header__item {
   display: inline-block;
   padding: 4px 0; }
@@ -126,27 +126,40 @@ a {
     background-image: linear-gradient(to right, #f2d8b7, #dabf99); }
 
 .banner__title {
-  margin: 30px auto;
-  max-width: 650px;
-  font-family: "Francois One", "Helvetica Neue", Arial, sans-serif;
+  margin: 30px auto 50px;
+  font-family: Questrial, "Helvetica Neue", Arial, sans-serif;
   font-weight: bold; }
   .banner__title span {
     color: #999; }
 .banner__subtitle {
   margin: 30px auto;
   font-size: 20px;
-  font-family: "Questrial", Tahoma, Monaco, Ayuthaya, "Helvetica Neue", Arial, sans-serif;
+  font-family: Questrial, "Helvetica Neue", Arial, sans-serif;
   font-weight: 300;
   letter-spacing: 1px; }
 
 .landing {
   padding: 120px 0; }
+  .landing .clear {
+    display: inline-block; }
   .landing .form-group {
     background-color: #2e2925; }
   .landing .form-input {
     width: 400px;
     color: #fff;
     background-color: transparent; }
+    .landing .form-input::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #fff; }
+    .landing .form-input::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #fff; }
+    .landing .form-input:-ms-input-placeholder {
+      /* IE 10+ */
+      color: #fff; }
+    .landing .form-input:-moz-placeholder {
+      /* Firefox 18- */
+      color: #fff; }
   .landing .btn {
     min-width: 100px;
     font-size: 16px;
@@ -156,12 +169,22 @@ a {
   .landing__container {
     padding: 30px 0; }
   .landing__label {
-    font-size: 20px;
-    font-family: "Questrial", Tahoma, Monaco, Ayuthaya, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    font-family: Questrial, "Helvetica Neue", Arial, sans-serif;
     font-weight: 300;
     letter-spacing: 1px; }
   .landing__form {
     margin: 15px 0 45px; }
+  .landing__form-message {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 548px; }
+    .landing__form-message .response {
+      margin-top: 7px; }
+    .landing__form-message #mce-error-response {
+      color: #a94442; }
+    .landing__form-message #mce-success-response {
+      color: #3c763d; }
 
 .social-icons {
   padding: 30px 0 20px; }
@@ -176,8 +199,8 @@ a {
 #particles-js {
   position: absolute;
   width: 100%;
-  height: 100%;
-  background-image: url("");
+  top: 50px;
+  bottom: 0;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat; }
@@ -240,11 +263,11 @@ a {
     padding: 10px 0; } }
 @media (max-width: 413px) {
   .landing .form-input {
-    width: 246px; } }
+    width: 243px; } }
 @media (max-width: 374px) {
   .landing {
-    margin: 10% 0; }
+    margin: 7% 0; }
     .landing .form-input {
-      width: 190px; } }
+      width: 187px; } }
 
 /*# sourceMappingURL=main.css.map */
