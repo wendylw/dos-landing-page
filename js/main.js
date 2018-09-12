@@ -112,3 +112,9 @@ var particleObject = {
 (function(){
   particlesJS('particles-js', particleObject);
 })();
+
+(function($) {
+  window.onload = function () {
+    $('.loading').addClass('hidden');
+  };
+}(jQuery));

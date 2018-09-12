@@ -387,6 +387,29 @@ a {color: inherit;
   }
 }
 
+.loading {
+  text-align: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: $white;
+  z-index: 3000;
+
+  img {
+    position: absolute;
+    top: 50%;
+    max-width: 100px;
+
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+  }
+
+  &.hidden {
+    display: none !important;
+  }
+}
+
 @media(max-width: 413px) {
   .landing {
     .form-input {
